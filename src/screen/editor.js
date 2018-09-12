@@ -2,6 +2,7 @@ import React from 'react';
 import { createMuiTheme, withStyles } from '@material-ui/core/styles';
 import SectionEdition from '../component/section-edition';
 import SectionPreview from '../component/section-preview';
+import DownloadButton from '../component/download-button';
 
 const styles = (theme) => ({
   root: {
@@ -17,6 +18,11 @@ const styles = (theme) => ({
   },
   preview: {
     flex: 3,
+  },
+  button: {
+    position: 'fixed',
+    bottom: theme.spacing.unit * 2,
+    right: theme.spacing.unit * 2,
   },
 });
 
@@ -46,6 +52,10 @@ class Editor extends React.Component {
           onChange={this.handleChangeView}
           theme={this.state.theme}
           view={this.state.view}
+        />
+        <DownloadButton
+          rootClassName={classes.button}
+          theme={this.state.theme}
         />
       </main>
     );
