@@ -3,6 +3,7 @@ import { createMuiTheme, withStyles } from '@material-ui/core/styles';
 import SectionEdition from '../component/section-edition';
 import SectionPreview from '../component/section-preview';
 import DownloadButton from '../component/download-button';
+import GithubButton from '../component/github-button';
 
 const styles = (theme) => ({
   root: {
@@ -42,6 +43,7 @@ class Editor extends React.Component {
     const { classes } = this.props;
     return (
       <main className={classes.root}>
+        <GithubButton />
         <SectionEdition
           rootClassName={classes.edition}
           onChange={this.handleChangeTheme}

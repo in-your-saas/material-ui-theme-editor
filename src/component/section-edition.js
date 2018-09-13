@@ -2,6 +2,7 @@ import React from 'react';
 import cn from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
 
+import LogoButton from './logo-button';
 import PaletteEditionCard from './palette-edition-card';
 
 const styles = (theme) => ({
@@ -10,6 +11,9 @@ const styles = (theme) => ({
   },
   card: {
     margin: theme.spacing.unit,
+  },
+  logo: {
+    maxWidth: 150,
   },
 });
 
@@ -63,6 +67,7 @@ class SectionEdition extends React.PureComponent {
     const { classes, rootClassName } = this.props;
     return (
       <aside className={cn(classes.root, rootClassName)}>
+        <LogoButton />
         <PaletteEditionCard
           label="Common colors"
           name="common"
