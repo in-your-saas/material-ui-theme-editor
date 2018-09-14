@@ -2,6 +2,7 @@ import React from 'react';
 import cn from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
 
+import Card from '@material-ui/core/Card';
 import PreviewDisplay from './preview';
 import ViewSelector from './view-selector';
 
@@ -20,7 +21,6 @@ const styles = (theme) => ({
     backgroundColor: theme.palette.background.paper,
     flex: 1,
     margin: theme.spacing.unit,
-    overflow: 'auto',
     width: '100%',
   },
   desktop: {
@@ -43,13 +43,14 @@ class SectionPreview extends React.PureComponent {
             value={this.props.view}
           />
         </div>
-        <PreviewDisplay
+        <Card
           className={cn(classes.container, {
             [classes.desktop]: this.props.view === 'desktop',
             [classes.mobile]: this.props.view === 'mobile',
           })}
-          theme={this.props.theme}
-        />
+        >
+          <PreviewDisplay theme={this.props.theme} />
+        </Card>
       </section>
     );
   }

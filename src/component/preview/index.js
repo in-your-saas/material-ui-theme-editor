@@ -1,23 +1,31 @@
 import React from 'react';
-import { MuiThemeProvider } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
+import { MuiThemeProvider, withStyles } from '@material-ui/core/styles';
 
 import PreviewAppBar from './app-bar';
 import PreviewBadge from './badge';
 import PreviewBottomNavigation from './bottom-navigation';
 import PreviewButton from './button';
 
-export default class PreviewDisplay extends React.PureComponent {
+const styles = () => ({
+  root: {
+    overflow: 'auto',
+  },
+});
+
+class PreviewDisplay extends React.PureComponent {
   render() {
+    const { classes } = this.props;
     return (
-      <Paper className={this.props.className}>
+      <div className={classes.root}>
         <MuiThemeProvider theme={this.props.theme}>
           <PreviewAppBar />
           <PreviewBadge />
           <PreviewBottomNavigation />
           <PreviewButton />
         </MuiThemeProvider>
-      </Paper>
+      </div>
     );
   }
 }
+
+export default withStyles(styles)(PreviewDisplay);
