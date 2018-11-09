@@ -1,4 +1,4 @@
-import { saveAs } from 'file-saver/FileSaver';
+import saveAs from 'file-saver';
 import get from 'lodash/get';
 import set from 'lodash/set';
 
