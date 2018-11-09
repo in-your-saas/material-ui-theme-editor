@@ -1,0 +1,7 @@
+{
+  "extends": "react-app",
+  "rules": {
+    "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+    "jsx-quotes": ["error", "prefer-double"]
+  }
+}
