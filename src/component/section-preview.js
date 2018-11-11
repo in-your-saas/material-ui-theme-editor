@@ -17,7 +17,6 @@ const styles = (theme) => ({
   },
   container: {
     alignSelf: 'center',
-    backgroundColor: theme.palette.background.paper,
     flex: 1,
     margin: theme.spacing.unit,
     overflow: 'auto',
