@@ -1,6 +1,13 @@
 {
-  "main.css": "static/css/main.a8f927df.css",
-  "main.css.map": "static/css/main.a8f927df.css.map",
-  "main.js": "static/js/main.c8323197.js",
-  "main.js.map": "static/js/main.c8323197.js.map"
+  "main.css": "/material-ui-theme-editor/static/css/main.38224f44.chunk.css",
+  "main.js": "/material-ui-theme-editor/static/js/main.57cbd179.chunk.js",
+  "main.js.map": "/material-ui-theme-editor/static/js/main.57cbd179.chunk.js.map",
+  "static/js/1.d751410a.chunk.js": "/material-ui-theme-editor/static/js/1.d751410a.chunk.js",
+  "static/js/1.d751410a.chunk.js.map": "/material-ui-theme-editor/static/js/1.d751410a.chunk.js.map",
+  "runtime~main.js": "/material-ui-theme-editor/static/js/runtime~main.a1e4b656.js",
+  "runtime~main.js.map": "/material-ui-theme-editor/static/js/runtime~main.a1e4b656.js.map",
+  "static/css/main.38224f44.chunk.css.map": "/material-ui-theme-editor/static/css/main.38224f44.chunk.css.map",
+  "index.html": "/material-ui-theme-editor/index.html",
+  "precache-manifest.9d9be749ae1e4f1b7c24d68b24b624e1.js": "/material-ui-theme-editor/precache-manifest.9d9be749ae1e4f1b7c24d68b24b624e1.js",
+  "service-worker.js": "/material-ui-theme-editor/service-worker.js"
 }
